@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora: Salário Líquido</title>
+    <link rel="stylesheet" href="./calculosRHDP.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Calculadora</h1>
+            <h2>Salário Líquido</h2>
+            <h3>Descubra o valor do seu salário líquido a partir do salário bruto</h3>
+        </section>
+        <form action="">
+            <label for="">Salário Bruto:</label>
+            <input type="number" id="salarioBruto" placeholder="Digite o valor do seu salário" required>
+            <p>O salário bruto não considera os impostos.</p>
+            <label for="">Número de Dependentes:</label>
+            <input type="number" id="dependentes" placeholder="Digite a quantidade de seus dependentes">
+            <p>Se não houver, digite "0".</p>
+            <label for="">Pensão Alimentícia:</label>
+            <input type="number" id="pensaoAlimenticia" placeholder="Digite o valor do desconto da pensão alimentícia">
+            <p>Se não houver, digite "0".</p>
+            <label for="">Outros Descontos:</label>
+            <input type="number" id="outrosDescontos" placeholder="Digite o valor total de outros descontos">
+            <p>Os outros descontos constam no contracheque. Se não houver, digite "0".</p>
+            <button type="button" onclick="calcularDados()">Calcular</button>
+        </form>
+        <div id="resultadoCalculo">Resultados com base no seu salário bruto:</div>
+    </main>
+    <script src="calculosRHDP.js"></script>
+</body>
+</html>
